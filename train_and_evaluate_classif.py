@@ -22,13 +22,13 @@ if __name__ == '__main__':
     print ("Start training model...")
 
     model = train_supervised(input=args.training_data,
-                           epoch=args.epoch,
-                           lr=args.lr,
-                           wordNgrams=2,
-                           verbose=2,
-                           loss='ova',
-                           bucket=200000,
-                           minCount=1)
+                             epoch=args.epoch,
+                             lr=args.lr,
+                             wordNgrams=2,
+                             verbose=2,
+                             loss='ova',
+                             bucket=200000,
+                             minCount=1)
 
     print_results(*model.test(args.validation_data))
     model.save_model("model.bin")
