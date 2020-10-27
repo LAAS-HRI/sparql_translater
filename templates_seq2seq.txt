@@ -1,0 +1,2 @@
+<Courtesy> give me the <Color> <Object> that is on the <SupportObject>|SELECT ?x WHERE { ?x hasColor <Color> . ?y hasName <SupportObject> . ?x isOn ?y }
+<Courtesy> give me the <Color> <Object>s that are on the <SupportObject>|SELECT ?x WHERE { ?x hasColor <Color> . ?y hasName <SupportObject> . ?x isOn ?y }
