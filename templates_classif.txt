@@ -1,16 +1,16 @@
-__label__unique __label__relational <Courtesy> give me the <Color> <Object> that is on the <Size> <Support>
-__label__multiple __label__relational <Courtesy> give me the <Color> <Object>s that are on the <Size> <Support>
-__label__unique __label__relational <Courtesy> give me the <Color> <Object> that is inside the <Size> <Container>
-__label__multiple __label__relational <Courtesy> give me the <Color> <Object> that are inside the <Size> <Container>
+__label__unique __label__relational <Courtesy> give me the <Color> <Object> that is on the <Size> <SupportObject>
+__label__multiple __label__relational <Courtesy> give me the <Color> <Object>s that are on the <Size> <SupportObject>
+__label__unique __label__relational <Courtesy> give me the <Color> <Object> that is inside the <Size> <ContainerObject>
+__label__multiple __label__relational <Courtesy> give me the <Color> <Object> that are inside the <Size> <ContainerObject>
 __label__unique <Courtesy> give me the <Color> <Object>
-__label__unique <Courtesy> give me the <Color> <Container>
+__label__unique <Courtesy> give me the <Color> <ContainerObject>
 __label__multiple <Courtesy> give me the <Color> <Object>s
-__label__multiple __label__relational <Courtesy> grab the <Color> <Object>s that are on the <Size> <Support>
-__label__unique __label__relational <Courtesy> grab the <Color> <Object>s that is on top the <Size> <Support>
-__label__unique __label__relational <Courtesy> grab the <Color> <Object> that is inside the <Size> <Support>
-__label__multiple __label__relational <Courtesy> grab the <Color> <Object>s that are inside the <Size> <Support>
+__label__multiple __label__relational <Courtesy> grab the <Color> <Object>s that are on the <Size> <SupportObject>
+__label__unique __label__relational <Courtesy> grab the <Color> <Object>s that is on top the <Size> <SupportObject>
+__label__unique __label__relational <Courtesy> grab the <Color> <Object> that is inside the <Size> <SupportObject>
+__label__multiple __label__relational <Courtesy> grab the <Color> <Object>s that are inside the <Size> <SupportObject>
 __label__multiple <Courtesy> bring me the <Color> <Object>s
 __label__unique <Courtesy> hold me that <Object>
 __label__multiple <Courtesy> bring the <Color> <Object>s
 __label__unique <Courtesy> bring the <Color> <Object>
-__label__unique __label__relational <Courtesy> give me the <Color> <Object> on your left
+__label__unique __label__relational __label__perspective <Courtesy> give me the <Color> <Object> on your left

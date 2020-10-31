@@ -1,0 +1,15 @@
+"SELECT": "select_tk"
+"WHERE": "where_tk"
+"?x": "var_x"
+"?y": "var_y"
+"{": "start_bracket"
+"}": "end_bracket"
+"isOn": "is_on"
+"isInside": "is_inside"
+"hasColor": "has_color"
+"hasSize": "has_size"
+"isHeldBy": "is_held_by"
+"hasName": "has_name"
+"<receiver>": receiver_tk
+"<sender>": sender_tk
+".": "point_sep"

@@ -2,10 +2,37 @@
 
 import argparse
 import csv
+import yaml
 import numpy as np
 from numpy.random import shuffle
 
 np.random.seed(123)  # for reproducibility
+
+
+class Tokenizer(object):
+    def __init__(self, sparql_tokens_file="sparql_tokens.yaml"):
+        self.tokens_map = {}
+        self.reverse_token_map = {}
+        with open(sparql_tokens_file, "r") as file:
+            self.tokens_map = yaml.load(file)
+        for sparql, token in self.tokens_map.items():
+            self.reverse_token_map[token] = sparql
+
+    def tokenize(self, sentence):
+        tokenized_sentence = sentence
+        for word in sentence.split():
+            if word in self.tokens_map:
+                tokenized_sentence = tokenized_sentence.replace(word, self.tokens_map[word])
+        return tokenized_sentence
+
+    def reconstruct(self, sentence):
+        reconstructed_sentence = ""
+        for word in sentence.split():
+            if word in self.reverse_token_map:
+                reconstructed_sentence += self.reverse_token_map[word]
+            else:
+                reconstructed_sentence += word
+        return reconstructed_sentence
 
 
 def load_templates(templates_file_path):
@@ -34,7 +61,7 @@ def load_individuals(individuals_file_path):
     return individuals_map
 
 
-def generate_data(templates, individuals, nb_examples_per_template=1000):
+def generate_data(templates, individuals, nb_examples_per_template=1000, tokenizer=None):
     data = []
     source_already_generated = {}
     target_already_generated = {}
@@ -44,7 +71,10 @@ def generate_data(templates, individuals, nb_examples_per_template=1000):
             source_template_filled = fill_template(source_template, individuals)
             target_template_filled = fill_template(target_template, individuals)
             if source_template_filled not in source_already_generated and target_template_filled not in target_already_generated:
-                data.append((source_template_filled, target_template_filled))
+                if tokenizer is None:
+                    data.append((source_template_filled, target_template_filled))
+                else:
+                    data.append((source_template_filled, tokenizer.tokenize(target_template_filled)))
                 source_already_generated[source_template_filled] = True
                 target_already_generated[target_template_filled] = True
     shuffle(data)
@@ -56,8 +86,8 @@ def fill_template(template, individuals):
         index = pick_index(individuals[key])
         individual = individuals[key][index]
         template = template.replace(key, individual)
-        template = template.replace(" [none] ", " ")
         template = template.replace("[none] ", "")
+        template = template.replace(" [none] ", " ")
     return template
 
 
@@ -91,10 +121,11 @@ def save(data, training_file_path, validation_file_path):
     print ("Saved "+str(nb_val)+" samples in validation dataset")
 
 
-def main(templates_file_path="templates.csv", individuals_file_path="individuals.csv", max_examples_per_template=600, train_file="seq2seq_train.txt", val_file="seq2seq_val.txt"):
+def main(templates_file_path="templates.csv", individuals_file_path="individuals.csv", max_examples_per_template=600, train_file="seq2seq_train", val_file="seq2seq_val"):
+    tokenizer = Tokenizer()
     templates = load_templates(templates_file_path)
     individuals = load_individuals(individuals_file_path)
-    data = generate_data(templates, individuals, max_examples_per_template)
+    data = generate_data(templates, individuals, max_examples_per_template, tokenizer)
     save(data, train_file, val_file)
     print ("Bye bye !")
 

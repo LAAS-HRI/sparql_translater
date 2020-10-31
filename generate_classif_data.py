@@ -83,7 +83,7 @@ def save(data, training_file_path, validation_file_path):
 
 
 
-def main(templates_file_path="templates.csv", individuals_file_path="individuals.csv", max_examples_per_template=600, train_file="train.txt", val_file="val.txt"):
+def main(templates_file_path="templates_classif.txt", individuals_file_path="individuals.csv", max_examples_per_template=600, train_file="train_classif.txt", val_file="val_classif.txt"):
     templates = load_templates(templates_file_path)
     individuals = load_individuals(individuals_file_path)
     data = generate_data(templates, individuals, max_examples_per_template)
@@ -93,7 +93,7 @@ def main(templates_file_path="templates.csv", individuals_file_path="individuals
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='The dataset generator.')
-    parser.add_argument("--templates", type=str, default="templates.txt", help='The templates file to use')
+    parser.add_argument("--templates", type=str, default="templates_classif.txt", help='The templates file to use')
     parser.add_argument("--individuals", type=str, default="individuals.csv", help='The individuals to randomly pick')
     parser.add_argument("--max_per_template", type=int, default=50, help="The max number of examples to generate per template")
 

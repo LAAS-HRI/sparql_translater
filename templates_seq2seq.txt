@@ -1,2 +1,6 @@
 <Courtesy> give me the <Color> <Object> that is on the <SupportObject>|SELECT ?x WHERE { ?x hasColor <Color> . ?y hasName <SupportObject> . ?x isOn ?y }
 <Courtesy> give me the <Color> <Object>s that are on the <SupportObject>|SELECT ?x WHERE { ?x hasColor <Color> . ?y hasName <SupportObject> . ?x isOn ?y }
+give me the <Color> <Object>|SELECT ?x WHERE { ?x hasName <Object> . ?x hasColor <Color> }
+give me the <Object> in the <ContainerObject>|SELECT ?x WHERE { ?x hasName <Object> . ?y hasName <ContainerObject> . ?x isInside ?y }
+hold me that |SELECT ?x WHERE { ?x isHeldBy <sender> }
+hold me the <Object> |SELECT ?x WHERE { ?x hasName <Object> . ?x isHeldBy <sender> }

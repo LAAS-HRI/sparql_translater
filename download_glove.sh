@@ -1,7 +1,7 @@
 
 #!/bin/bash
 # This script install the Glove dataset
-echo "Start downloding the Glove dataset... this may take a while..."
+echo "Start downloading the Glove dataset... this may take a while..."
 mkdir -p models/word_embeddings
 cd ./models/word_embeddings
 mkdir glove && cd glove
