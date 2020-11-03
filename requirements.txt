@@ -2,3 +2,5 @@ numpy
 scipy
 argparse
 fasttext
+tensorflow
+OpenNMT-tf

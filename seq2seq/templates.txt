@@ -1,0 +1,13 @@
+<Courtesy> give me the <Color> <Object> that is on the <SupportObject>|SELECT ?x WHERE { ?x hasColor <Color> . ?y hasName <SupportObject> . ?x isOnTop ?y }
+<Courtesy> give me the <Color> <Object>s that are on the <SupportObject>|SELECT ?x WHERE { ?x hasColor <Color> . ?y hasName <SupportObject> . ?x isOnTop ?y }
+<Courtesy> give me the <Color> <Object>|SELECT ?x WHERE { ?x hasName <Object> . ?x hasColor <Color> }
+<Courtesy> give me the <Object> in the <ContainerObject>|SELECT ?x WHERE { ?x hasName <Object> . ?y hasName <ContainerObject> . ?x isInside ?y }
+<Courtesy> hold that |SELECT ?x WHERE { ?x isHeldBy <sender> }
+<Courtesy> hold the <Object> |SELECT ?x WHERE { ?x hasName <Object> . ?x isHeldBy <sender> }
+<Courtesy> what are in the <ContainerObject> ?|SELECT ?x WHERE { ?y hasName <Container> . ?y isInside ?x }
+<Courtesy> where is the <Object> ?|SELECT ?x WHERE { ?x isA Place . ?y hasName <Object> . ?y isAt ?x }
+<Courtesy> where is my <Color> <Object> ?|SELECT ?x WHERE { ?x isA Place . ?y hasName <Object> . ?y belongsTo <sender> ?y hasColor <Color> . ?y isAt ?x }
+<Courtesy> what objects are beside the <Object> ?|SELECT ?x WHERE { ?x isA Object . ?y hasName <Object> . ?x isClose ?y }
+<Courtesy> what <Color> objects do you see on the <SupportObject> ?|SELECT ?x WHERE { ?x isA Object . ?x hasColor <Color> . ?y isA <SupportObject> . ?x isOnTop ?y }
+<Courtesy> what is on the left of the <Object>|SELECT ?x WHERE { ?x isA Object . ?y hasName <Object> . ?x isLeftOf ?y }
+<Courtesy> what is on the right of the <Object>|SELECT ?x WHERE { ?x isA Object . ?y hasName <Object> . ?x isRightOf ?y }

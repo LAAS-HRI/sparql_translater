@@ -1,0 +1,88 @@
+select_tk var_x where_tk start_bracket var_x has_color wooden point_sep var_y has_name stand point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name fork point_sep var_x has_color gray end_bracket
+select_tk var_x where_tk start_bracket var_x has_color green point_sep var_y has_name stand point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name bowl point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x has_name pen point_sep var_x has_color white end_bracket
+select_tk var_x where_tk start_bracket var_x has_name bowl point_sep var_y has_name shelf point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name shoe point_sep var_x is_held_by sender_tk end_bracket
+select_tk var_x where_tk start_bracket var_x has_name beer point_sep var_x has_color purple end_bracket
+select_tk var_x where_tk start_bracket var_x has_color pink point_sep var_y has_name table point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name bottle point_sep var_x has_color orange end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color wooden point_sep var_y is_a console point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name pen point_sep var_x has_color wooden end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name mouse point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name cube point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x has_name umbrella point_sep var_y has_name shelf point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name book point_sep var_y belongsTo sender_tk var_y has_color pink point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x has_name knife point_sep var_x has_color pink end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name cup point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x has_name fork point_sep var_y has_name toolbox point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_color yellow point_sep var_y has_name console point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name fork point_sep var_y has_name carton point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name knife point_sep var_x isRightOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name hair drier point_sep var_y belongsTo sender_tk var_y has_color pink point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name cell phone point_sep var_x isLeftOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name cube point_sep var_x has_color red end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color white point_sep var_y is_a desk point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color blue point_sep var_y is_a desk point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name beer point_sep var_x isRightOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name pencil point_sep var_x is_close var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name glass point_sep var_y has_name box point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name pencil point_sep var_y has_name box point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name mouse point_sep var_x has_color purple end_bracket
+select_tk var_x where_tk start_bracket var_x has_name fork point_sep var_x has_color green end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name laptop point_sep var_x is_close var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_color yellow point_sep var_y has_name table point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name screwdriver point_sep var_y has_name bag point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name clamp point_sep var_x has_color yellow end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color gray point_sep var_y is_a table point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name shoe point_sep var_y has_name packet point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_color gray point_sep var_y has_name console point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name knife point_sep var_x has_color white end_bracket
+select_tk var_x where_tk start_bracket var_x has_name mouse point_sep var_y has_name backpack point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name hair drier point_sep var_x isRightOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_color purple point_sep var_y has_name table point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name clamp point_sep var_y belongsTo sender_tk var_y has_color black point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name keyboard point_sep var_x is_close var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name cube point_sep var_y has_name backpack point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name book point_sep var_x isRightOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name clamp point_sep var_x isLeftOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name pencil point_sep var_x isRightOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name pen point_sep var_x isRightOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name laptop point_sep var_y has_name packet point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name mouse point_sep var_y has_name shelf point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color yellow point_sep var_y is_a console point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name glass point_sep var_x isRightOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name cup point_sep var_x has_color purple end_bracket
+select_tk var_x where_tk start_bracket var_x has_name phone point_sep var_x has_color blue end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name pencil point_sep var_x isLeftOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name umbrella point_sep var_y has_name carton point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name screwdriver point_sep var_x has_color yellow end_bracket
+select_tk var_x where_tk start_bracket var_x has_name shoe point_sep var_x has_color wooden end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color black point_sep var_y is_a console point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_color pink point_sep var_y has_name console point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name knife point_sep var_x is_close var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name laptop point_sep var_y has_name shelf point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name hair drier point_sep var_y belongsTo sender_tk var_y has_color green point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x has_name cell phone point_sep var_x has_color yellow end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name cube point_sep var_x is_close var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name pen point_sep var_y belongsTo sender_tk var_y has_color yellow point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name pen point_sep var_x isLeftOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color white point_sep var_y is_a stand point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name glass point_sep var_x has_color blue end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name toothbrush point_sep var_y belongsTo sender_tk var_y has_color wooden point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x has_name clamp point_sep var_x has_color black end_bracket
+select_tk var_x where_tk start_bracket var_x has_name cell phone point_sep var_y has_name shelf point_sep var_x is_inside var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name plate point_sep var_x has_color pink end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color orange point_sep var_y is_a stand point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name hair drier point_sep var_y belongsTo sender_tk var_y has_color yellow point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name bowl point_sep var_x isLeftOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name umbrella point_sep var_x isRightOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name knife point_sep var_y belongsTo sender_tk var_y has_color pink point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name bottle point_sep var_x isRightOf var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Place point_sep var_y has_name laptop point_sep var_y belongsTo sender_tk var_y has_color red point_sep var_y is_at var_x end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color orange point_sep var_y is_a table point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_color green point_sep var_y has_name console point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x has_name cell phone point_sep var_x has_color white end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_x has_color green point_sep var_y is_a stand point_sep var_x is_on var_y end_bracket
+select_tk var_x where_tk start_bracket var_x is_a Object point_sep var_y has_name beer point_sep var_x isLeftOf var_y end_bracket

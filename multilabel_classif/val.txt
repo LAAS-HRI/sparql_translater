@@ -1,11 +1,11 @@
 __label__unique could you hold me that toothbrush
 __label__unique __label__relational grab the red ball that is inside the small table
 __label__unique whould you like to bring the purple cube
-__label__unique __label__relational give me the wooden pen on your left
+__label__unique __label__relational __label__perspective give me the wooden pen on your left
 __label__multiple __label__relational hey can you grab the yellow shoes that are on the large console
 __label__multiple __label__relational hey can you give me the blue scissors that are inside the small case
 __label__unique __label__relational hey can you grab the yellow umbrellas that is on top the large table
-__label__unique __label__relational hello give me the purple pencil on your left
+__label__unique __label__relational __label__perspective hello give me the purple pencil on your left
 __label__unique __label__relational hello give me the black cup that is inside the medium box
 __label__unique please could you give me the gray knife
 __label__multiple __label__relational could you grab the red scissorss that are on the big console
@@ -20,13 +20,13 @@ __label__multiple __label__relational could you grab the yellow bowls that are o
 __label__multiple __label__relational could you give me the purple shoes that are on the huge console
 __label__unique hey can you give me the white keyboard
 __label__unique whould you like to give me the white toolbox
-__label__unique __label__relational whould you like to give me the wooden knife on your left
+__label__unique __label__relational __label__perspective whould you like to give me the wooden knife on your left
 __label__multiple could you give me the pink screwdrivers
 __label__multiple __label__relational give me the purple cell phones that are on the small stand
 __label__unique __label__relational hey can you give me the purple phone that is inside the big carton
 __label__multiple bring me the yellow screwdrivers
 __label__unique hey can you give me the orange bottle
-__label__unique __label__relational hello give me the blue scissors on your left
+__label__unique __label__relational __label__perspective hello give me the blue scissors on your left
 __label__unique __label__relational hello grab the white glass that is inside the medium table
 __label__multiple __label__relational give me the wooden bottle that are inside the huge handbag
 __label__unique whould you like to give me the yellow laptop
@@ -35,7 +35,7 @@ __label__multiple whould you like to bring the wooden bowls
 __label__unique __label__relational grab the gray clamps that is on top the large table
 __label__unique hello hold me that scissors
 __label__multiple __label__relational hello give me the purple toothbrush that are inside the small shelf
-__label__unique __label__relational hey can you give me the black fork on your left
+__label__unique __label__relational __label__perspective hey can you give me the black fork on your left
 __label__unique whould you like to give me the white cup
 __label__unique hello bring the black clamp
 __label__multiple hey can you bring the purple scissorss
@@ -60,7 +60,7 @@ __label__unique please could you give me the green glass
 __label__unique __label__relational please could you give me the red umbrella that is inside the large backpack
 __label__unique __label__relational hey can you grab the blue bowls that is on top the medium stand
 __label__unique __label__relational whould you like to give me the wooden pencil that is on the medium stand
-__label__unique __label__relational hello give me the purple beer on your left
+__label__unique __label__relational __label__perspective hello give me the purple beer on your left
 __label__unique __label__relational could you give me the wooden toothbrush that is on the big desk
 __label__unique __label__relational hello grab the blue toothbrush that is inside the huge stand
 __label__unique __label__relational could you grab the pink laptop that is inside the large stand
@@ -69,7 +69,7 @@ __label__multiple bring me the pink shoes
 __label__multiple __label__relational could you give me the gray beer that are inside the big bag
 __label__multiple give me the red screwdrivers
 __label__unique __label__relational please could you give me the blue hair drier that is on the medium console
-__label__unique __label__relational give me the yellow glass on your left
+__label__unique __label__relational __label__perspective give me the yellow glass on your left
 __label__multiple __label__relational please could you grab the black bowls that are on the large console
 __label__unique __label__relational whould you like to grab the gray laptops that is on top the big table
 __label__multiple __label__relational hello give me the blue mouse that are inside the large box
@@ -82,7 +82,7 @@ __label__unique whould you like to hold me that laptop
 __label__multiple hello bring the black umbrellas
 __label__unique __label__relational grab the white keyboards that is on top the large console
 __label__multiple __label__relational hello grab the black screwdrivers that are on the large table
-__label__unique __label__relational hello give me the pink beer on your left
+__label__unique __label__relational __label__perspective hello give me the pink beer on your left
 __label__multiple __label__relational please could you grab the orange forks that are on the medium stand
 __label__multiple please could you bring me the yellow cell phones
 __label__unique __label__relational hey can you give me the white pencil that is on the big desk
@@ -94,8 +94,8 @@ __label__unique __label__relational hello give me the red clamp that is on the m
 __label__unique please could you give me the gray backpack
 __label__multiple __label__relational could you grab the blue phones that are on the large desk
 __label__unique __label__relational grab the gray mouse that is inside the small console
-__label__unique __label__relational whould you like to give me the black clamp on your left
-__label__unique __label__relational whould you like to give me the blue shoe on your left
+__label__unique __label__relational __label__perspective whould you like to give me the black clamp on your left
+__label__unique __label__relational __label__perspective whould you like to give me the blue shoe on your left
 __label__multiple hello bring the white scissorss
 __label__multiple __label__relational could you grab the red screwdrivers that are inside the huge table
 __label__multiple could you bring me the purple beers
@@ -106,7 +106,7 @@ __label__unique please could you give me the purple box
 __label__multiple __label__relational hey can you give me the black balls that are on the small table
 __label__unique __label__relational grab the gray fork that is inside the small desk
 __label__multiple give me the purple cubes
-__label__unique __label__relational give me the wooden bowl on your left
+__label__unique __label__relational __label__perspective give me the wooden bowl on your left
 __label__unique __label__relational hello grab the wooden mouses that is on top the medium table
 __label__unique __label__relational please could you give me the pink cell phone that is inside the large backpack
 __label__multiple __label__relational could you grab the orange keyboards that are inside the big stand
@@ -130,7 +130,7 @@ __label__multiple bring me the yellow mouses
 __label__multiple __label__relational hey can you grab the green books that are inside the huge console
 __label__multiple whould you like to bring the red shoes
 __label__unique __label__relational hey can you give me the black knife that is inside the big packet
-__label__unique __label__relational give me the orange knife on your left
+__label__unique __label__relational __label__perspective give me the orange knife on your left
 __label__unique give me the gray packet
 __label__multiple please could you bring me the wooden beers
 __label__unique please could you hold me that scissors
@@ -154,4 +154,4 @@ __label__unique __label__relational please could you grab the orange balls that 
 __label__unique __label__relational hey can you give me the red fork that is inside the medium shelf
 __label__multiple could you bring me the gray bowls
 __label__multiple could you bring the green pens
-__label__unique __label__relational whould you like to give me the yellow cell phone on your left
+__label__unique __label__relational __label__perspective whould you like to give me the yellow cell phone on your left

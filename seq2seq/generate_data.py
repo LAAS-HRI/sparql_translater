@@ -101,16 +101,17 @@ def save(data, training_file_path, validation_file_path):
     split_index = int(len(data)*0.8)
     train_data = data[:split_index]
     val_data = data[split_index:]
-    with open(training_file_path+".en", 'w') as train_file_source:
-        with open(training_file_path+".sparql", 'w') as train_file_target:
+
+    with open("src-"+training_file_path, 'w') as train_file_source:
+        with open("tgt-"+training_file_path, 'w') as train_file_target:
             for data_pair in train_data:
                 source, target = data_pair
                 train_file_source.write(source+"\n\r")
                 train_file_target.write(target)
                 nb_train += 1
 
-    with open(validation_file_path+".en", 'w') as val_file_source:
-        with open(validation_file_path+".sparql", 'w') as val_file_target:
+    with open("src-"+validation_file_path, 'w') as val_file_source:
+        with open("tgt-"+validation_file_path, 'w') as val_file_target:
             for data_pair in val_data:
                 source, target = data_pair
                 val_file_source.write(source+"\n\r")
@@ -121,20 +122,56 @@ def save(data, training_file_path, validation_file_path):
     print ("Saved "+str(nb_val)+" samples in validation dataset")
 
 
-def main(templates_file_path="templates.csv", individuals_file_path="individuals.csv", max_examples_per_template=600, train_file="seq2seq_train", val_file="seq2seq_val"):
+def build_vocab(target_file_path, glove_file_path="models/word_embeddings/glove/glove.6B.50d.txt", stop_list=50000):
+    vocab = {}
+    token_by_index = {}
+    index = 0
+    with open(glove_file_path, "r") as glove_file:
+        for row in glove_file:
+            if index > stop_list:
+                break
+            token = row.split(" ")[0]
+            try:
+                test = token.replace("-", "")
+                test = float(test)
+            except ValueError:
+                vocab[token] = index
+                token_by_index[index] = token
+                index += 1
+
+    with open(target_file_path, "r") as tgt_file:
+        for row in tgt_file:
+            for token in row.split():
+                if token not in vocab:
+                    vocab[token] = index
+                    token_by_index[index] = token
+                    index += 1
+
+    with open("src-vocab.txt", "w") as src_vocab_file:
+        with open("tgt-vocab.txt", "w") as tgt_vocab_file:
+            tgt_vocab_file.write("<blank>\r\n<s>\r\n</s>\r\n")
+            src_vocab_file.write("<blank>\r\n<s>\r\n</s>\r\n")
+            for i in range(0, len(token_by_index)):
+                if token_by_index[i] != "":
+                    tgt_vocab_file.write(str(token_by_index[i])+"\r\n")
+                    src_vocab_file.write(str(token_by_index[i])+"\r\n")
+
+
+def main(templates_file_path="templates.csv", individuals_file_path="individuals.csv", max_examples_per_template=600, train_file="train.txt", val_file="val.txt"):
     tokenizer = Tokenizer()
     templates = load_templates(templates_file_path)
     individuals = load_individuals(individuals_file_path)
     data = generate_data(templates, individuals, max_examples_per_template, tokenizer)
     save(data, train_file, val_file)
+    build_vocab("tgt-"+train_file)
     print ("Bye bye !")
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='The dataset generator.')
-    parser.add_argument("--templates", type=str, default="templates_seq2seq.txt", help='The templates file to use')
-    parser.add_argument("--individuals", type=str, default="individuals.csv", help='The individuals to randomly pick')
-    parser.add_argument("--max_per_template", type=int, default=50, help="The max number of examples to generate per template")
+    parser.add_argument("--templates", type=str, default="templates.txt", help='The templates file to use')
+    parser.add_argument("--individuals", type=str, default="../individuals.csv", help='The individuals to randomly pick')
+    parser.add_argument("--max_per_template", type=int, default=100, help="The max number of examples to generate per template")
 
     args = parser.parse_args()
     print ("Start generating dataset...")

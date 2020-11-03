@@ -4,7 +4,8 @@
 "?y": "var_y"
 "{": "start_bracket"
 "}": "end_bracket"
-"isOn": "is_on"
+"isClose": "is_close"
+"isOnTop": "is_on"
 "isInside": "is_inside"
 "hasColor": "has_color"
 "hasSize": "has_size"
@@ -13,3 +14,5 @@
 "<receiver>": receiver_tk
 "<sender>": sender_tk
 ".": "point_sep"
+"isAt": "is_at"
+"isA": "is_a"

@@ -1,9 +1,9 @@
 Color,Object,Size,SupportObject,ContainerObject,Food,Furniture,Vehicule,Courtesy
-blue,cup,big,table,box,apple,chair,bicycle,please could you
-red,bottle,small,desk,shelf,sandwich,couch,car,hey can you
-orange,cube,large,stand,toolbox,orange,bed,motorcycle,could you
-yellow,pencil,medium,console,carton,broccoli,dining table,airplane,whould you like to
-green,beer,huge,,case,carrot,toilet,bus,hello
+blue,cup,big,table,box,apple,chair,bicycle,hey
+red,bottle,small,desk,shelf,sandwich,couch,car,please
+orange,cube,large,stand,toolbox,orange,bed,motorcycle,hello
+yellow,pencil,medium,console,carton,broccoli,dining table,airplane,[none]
+green,beer,huge,,case,carrot,toilet,bus,[none]
 black,fork,,,packet,hot dog,tv,train,[none]
 gray,knife,,,bag,pizza,potted_plant,boat,
 purple,plate,,,handbag,donut,microwave,truck,
